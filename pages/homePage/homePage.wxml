@@ -1,0 +1,29 @@
+<!-- 搜索框 -->
+<view >
+    <SearchBar id="SearchBar" addflag="{{addflag}}" bind:addhandle="addhandle" searchstr="{{searchstr}}" bind:searchList="searchList" bind:endsearchList="endsearchList" bind:cancelsearch="cancelsearch" bind:activity_clear="activity_clear">
+    </SearchBar>
+</view>
+<!-- 筛选框 -->
+<view class="sort-list">
+    <view class="sort" bindtap="changeBoxBtn" data-num="0">
+    学院
+      <image src="/image/homePage/arrow_down.png"style="width:8px;height:8px;"></image>
+    </view>
+    <view class="sort" bindtap="changeBoxBtn" data-num="2"> 智能排序 
+      <image src="/image/homePage/arrow_down.png"style="width:9px;height:9px;"></image>
+    </view>
+  </view>
+  <!-- 列表 -->
+<block wx:for="{{posts_key}}"wx:key="key" wx:for-item="item">
+  <view class="post-container">
+    <image class="post-image" src="{{item.imgSrc}}"></image>
+    <view class="desc">
+      <view class="title">{{item.title}} </view>
+      <view class="post-state">{{item.state}}</view>
+      <view class="post-simple">
+        <view class="post-simple-college">{{item.college}}</view>
+        <view class="post-simple-date">{{item.date}}</view>
+      </view>
+    </view>
+  </view>
+</block>

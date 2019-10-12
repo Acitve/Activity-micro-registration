@@ -1,0 +1,9 @@
+<view class='container'>
+  <image class="userImage" src="/image/biaotiPink.png"></image>
+  <view class="userWelcome">
+    <text>welcome</text>
+  </view>
+  <view class="motoContainer" bindtap="go">
+    <text class="moto">点击进入</text>
+  </view>
+</view>
