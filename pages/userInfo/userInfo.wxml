@@ -1,0 +1,41 @@
+<!--pages/userInfo/userInfo.wxml-->
+<view class="mine-wrapper">
+  <view class="avatar-wrapper">
+    <view>
+      <view class="avatar">
+        <image style="border-radius:50%;" src="/image/userInfo/user.png"></image>
+      </view>
+      <view class="text">
+      </view>
+      <view class="text">
+      <text>用户名</text>
+      </view>
+    </view>
+  </view>
+  
+  <view class="list-wrapper">
+    <view class="alllists">
+      <block wx:for="{{posts_key}}"wx:key="key" wx:for-item="item">
+        <navigator url="{{item.url}}" class="lists">
+        <view class='content'>
+          <view class="listimg">
+            <image src="{{item.icon}}"></image>
+          </view>
+          <view class="listtext">{{item.text}}</view>
+        </view>
+        </navigator>
+        <!-- 分割线 -->
+        <view class="divLine"></view>
+      </block>
+    </view>
+  </view>
+</view>
+
+<view class='share'>
+  <image src='/image/userInfo/fenxiang.png'></image>
+  <text>分享</text>
+  <button open-type='share'></button>
+</view>
+
+
+

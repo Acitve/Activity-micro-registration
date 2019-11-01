@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/homePage/homePage",
+    "pages/userInfo/userInfo",
+    "pages/userInfo/myActivity/myActivity",
+    "pages/notify/notify",
+    "pages/logs/logs",
+    "pages/userInfo/myRecord/myRecord",
+    "pages/userInfo/myFavorite/myFavorite",
+    "pages/userInfo/about/about"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f9f8f8",
+    "navigationBarTitleText": "吉珠微报名",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "black",
+    "color": "#CDC9C9",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/homePage/homePage",
+        "text": "首页",
+        "selectedIconPath": "image/tabBar/activity_fill.png",
+        "iconPath": "image/tabBar/activity.png"
+      },
+      {
+        "pagePath": "pages/notify/notify",
+        "text": "通知",
+        "selectedIconPath": "image/tabBar/info_fill.png",
+        "iconPath": "image/tabBar/info.png"
+      },
+      {
+        "pagePath": "pages/userInfo/userInfo",
+        "text": "我的",
+        "selectedIconPath": "image/tabBar/wode_fill.png",
+        "iconPath": "image/tabBar/wode.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap12.json"
+}

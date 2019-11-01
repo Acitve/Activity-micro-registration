@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "吉珠微报名",
+  "usingComponents": {
+    "SearchBar": "/components/searchBox/index"
+   }
+}

@@ -1,0 +1,14 @@
+
+.content{
+  vertical-align: center;
+  font-size:4vw;
+  display:block;
+  padding:1vh 0;
+  word-wrap:break-word;
+  word-break:normal;
+  
+
+}
+
+
+

@@ -1,0 +1,29 @@
+<view class="weui-search-bar">
+   <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{SearchData.value}}" bindinput='SearchInput' bindconfirm="SearchConfirm" />
+      <view class="weui-icon-clear" wx:if="{{SearchData.value.length > 0}}" bindtap="SearchClear">
+        <icon type="clear" size="14"></icon>
+      </view>
+    </view>
+  </view>
+    <view class="weui-search-bar__cancel-btn" bindtap="SearchConfirm">
+         <text wx:if="{{SearchData.value.length>0}}" data-key='search'>搜索</text>
+         <text wx:else data-key='back'>返回</text>
+    </view>
+</view>
+ <!-- 列表 -->
+<block wx:for="{{posts_key}}"wx:key="key" wx:for-item="item">
+  <view class="post-container">
+    <image class="post-image" src="{{item.imgSrc}}"></image>
+    <view class="desc">
+      <view class="title">{{item.title}} </view>
+      <view class="post-state">{{item.state}}</view>
+      <view class="post-simple">
+        <view class="post-simple-college">{{item.college}}</view>
+        <view class="post-simple-date">{{item.date}}</view>
+      </view>
+    </view>
+  </view>
+</block>
